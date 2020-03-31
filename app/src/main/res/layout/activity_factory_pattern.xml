@@ -6,4 +6,52 @@
     android:layout_height="match_parent"
     tools:context=".FactoryPatternActivity">
 
+    <EditText
+        android:id="@+id/edit_factory_method"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline" />
+
+    <EditText
+        android:id="@+id/edit_factory_abstract"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name"
+        app:layout_constraintStart_toStartOf="@+id/edit_factory_method"
+        app:layout_constraintTop_toBottomOf="@+id/edit_factory_method" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="240dp" />
+
+    <Button
+        android:id="@+id/btn_factory_method"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:text="팩토리 메소드 패턴"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/edit_factory_method"
+        app:layout_constraintTop_toTopOf="@+id/edit_factory_method" />
+
+    <Button
+        android:id="@+id/btn_factory_abstract"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="추상 패토리 패턴"
+        app:layout_constraintEnd_toEndOf="@+id/btn_factory_method"
+        app:layout_constraintStart_toStartOf="@+id/btn_factory_method"
+        app:layout_constraintTop_toTopOf="@+id/edit_factory_abstract" />
 </androidx.constraintlayout.widget.ConstraintLayout>
